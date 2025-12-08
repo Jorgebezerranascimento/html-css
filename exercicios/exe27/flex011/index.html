@@ -13,22 +13,33 @@
         div.item {
             background-color: blueviolet;
             border: 1px solid black;
-            text-align: center;
             color: aliceblue;
-            flex-basis: 250px;
-            
+            text-align: center;
+            flex-basis: 200px;
         }
+        
+        div#cxA{
+            flex-shrink: 1;
+            flex-grow: 0;
+        }
+        
+        div#cxB{
+            flex-shrink: 1;
+            flex-grow: 2;
+        }
+
+        div#cxC{
+            flex-shrink: 1;
+            flex-grow: 4;
+        }
+        
     </style>
 </head>
 <body>
     <div class="conteiner">
-        <div class="item">A</div>
-        <div class="item">outro conteudo</div>
-        <div class="item">C</div>
-        <div class="item">Conteudo um pouco grande</div>
-        <div class="item">E</div>
-        <div class="item">Conteudo muito maior que o normal, ocupa mais espaços.</div>
-        <div class="item">G</div>
+        <div class="item" id="cxA">A</div>
+        <div class="item" id="cxB">B</div>
+        <div class="item" id="cxC">C</div>
     </div>    
 </body>
 </html>
